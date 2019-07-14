@@ -25,3 +25,11 @@ reduce from 100 to 20 open issues
           <Link to='/'> Landing</Link>{' | '}
           <Link to='/index'> Index</Link>{' | '}
         </nav>
+
+
+
+url
+repository_url
+labels_url
+comments_url
+

@@ -3,18 +3,19 @@ import axios from 'axios'
 
 class Index extends React.Component {
     
-    // state = {
-    //     quote: "Make Kanye 2006 Again"
-    // }
+    state = {
+        issues: ['test1','test2','test3','test4']
+    }
 
-    // componentDidMount() {
-    //     axios.get('https://api.kanye.rest').then(result => {
-    //         let quote = result.data.quote;
-    //         this.setState({
-    //         quote
-    //         })
-    //     })
-    //     }
+    componentDidMount() {
+        axios.get('https://api.github.com/repos/facebook/react/issues?page=1&per_page=5')
+            .then(result => {
+                let issues = result.data;
+                this.setState({
+                issues
+                })
+        })
+        }
     
     
     
@@ -22,6 +23,13 @@ class Index extends React.Component {
         return(
             <>
                 <h1>Index Page</h1>
+                    {this.state.issues.map((issue, i) => 
+                    <div key={i}>
+                        <h2>{issue.title}</h2>
+                        <h3>Issue Number: {issue.number}</h3>
+                        <p>Submitted by {issue.id}</p>
+                        <hr></hr>
+                    </div>)}
                 
             </>
         )

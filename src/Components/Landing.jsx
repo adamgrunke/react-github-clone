@@ -7,7 +7,7 @@ const Landing = props => (
 
         <div>
             <Link to='/KanyeTest'>
-                <button type="button" className="btn btn">Kanye Quote</button>
+                <button type="button" className="btn btn">Kanye Test</button>
             </Link>
         </div>
 

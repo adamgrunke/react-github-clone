@@ -20,7 +20,7 @@ class App extends React.Component {
       <nav>
         <Link to='/'>Landing</Link>{' | '}
         <Link to='/Index'>Index</Link>{' | '}
-        <Link to='/show/:id'>Show</Link>{' | '}{' | '}{' | '}
+        <Link to='/show/:id'>Show</Link>{' | . . . . .  '}
         <Link to='/kanyetest'>kanyetest</Link>
       </nav>
 
