@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import moment from 'moment'
 
 class Index extends React.Component {
     
@@ -15,8 +16,7 @@ class Index extends React.Component {
                 issues
                 })
         })
-        }
-    
+    }
     
     
     render () {
@@ -28,6 +28,8 @@ class Index extends React.Component {
                         <h2>{issue.title}</h2>
                         <h3>Issue Number: {issue.number}</h3>
                         <p>Submitted by {issue.id}</p>
+                        <p> submitted {moment(issue.created_at).startOf().fromNow()}</p>
+                        
                         <hr></hr>
                     </div>)}
                 
