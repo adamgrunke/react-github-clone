@@ -14,19 +14,20 @@ import {
 
 class App extends React.Component {
 
+
   render () {
     return (
       <Router>
       <nav>
         <Link to='/'>Landing</Link>{' | '}
-        <Link to='/Index'>Index</Link>{' | '}
-        <Link to='/show/:id'>Show</Link>{' | . . . . .  '}
+        <Link to='/issues'>Issues</Link>{' | '}
+        <Link to='/issues/:id'>Single Issues</Link>{' | . . . . .  '}
         <Link to='/kanyetest'>kanyetest</Link>
       </nav>
 
         <Route exact path='/' component={Landing}/>
-        <Route exact path='/Index' component={Index}/>
-        <Route exact path='/show/:id' component={Show}/>
+        <Route exact path='/issues' component={Index}/>
+        <Route exact path='/issues/:id' component={Show}/>
         <Route exact path='/kanyetest' component={KanyeTest}/>
         
       </Router>

@@ -14,7 +14,8 @@ Strive to write Components that you can reuse in multiple places in your app
 TODO: 
 
 Create routes for the landing page, index of issues, show page ---DONE
-Call github api and request open issues
+Call github api and request open issues ---DONE
+Display second level of data returned from api.
 Show single issue
 
 Format look - initial pass
