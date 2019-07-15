@@ -20,8 +20,7 @@ class App extends React.Component {
       <Router>
       <nav>
         <Link to='/'>Landing</Link>{' | '}
-        <Link to='/issues'>Issues</Link>{' | '}
-        <Link to='/issues/:id'>Single Issues</Link>{' | . . . . .  '}
+        <Link to='/issues'>Issues</Link>{' | . . . . .  '}
         <Link to='/kanyetest'>kanyetest</Link>
       </nav>
 
@@ -29,6 +28,7 @@ class App extends React.Component {
         <Route exact path='/issues' component={Index}/>
         <Route exact path='/issues/:id' component={Show}/>
         <Route exact path='/kanyetest' component={KanyeTest}/>
+
         
       </Router>
     )

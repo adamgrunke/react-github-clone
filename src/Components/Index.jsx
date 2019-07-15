@@ -19,9 +19,7 @@ class Index extends React.Component {
                 })
         })
     }
-    
     render() {
-
         return(
             <>
                 {this.state.issues.map((issue, i) => 
@@ -39,6 +37,5 @@ class Index extends React.Component {
         );
     }
 } 
-    
 
 export default Index;

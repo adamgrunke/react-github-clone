@@ -34,3 +34,5 @@ repository_url
 labels_url
 comments_url
 
+<p> {this.state.issue[0].number}</p>
+why doesn't this work? What do I need to change to see the specific data collection from an array?

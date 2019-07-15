@@ -10,7 +10,7 @@ const Landing = props => (
             </Link>
         </div>
         <div>
-            <Link to='/Index'>
+            <Link to='/issues'>
                 <button type="button" className="btn btn">Go to Issues</button>
             </Link>
         </div>
